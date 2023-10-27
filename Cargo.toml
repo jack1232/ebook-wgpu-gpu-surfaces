@@ -1,0 +1,37 @@
+[package]
+name = "wgpu_gpu_surfaces"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wgpu = "0.17.1"
+cgmath = "0.18"
+env_logger = "0.10"
+futures = "0.3"
+gfx-hal = "0.9"
+image = "0.23"
+log = "0.4"
+pollster = "0.2"
+winit = "0.28" 
+anyhow = "1.0"
+rand = "0.8"
+bytemuck = { version = "1.13", features = ["derive"] }
+wgpu_simplified = { git = "https://github.com/jack1232/wgpu_simplified" }
+flume = "0.11"
+
+[[example]]
+name = "matrix_multiplication"
+path = "examples/ch01/matrix_multiplication.rs"
+
+[[example]]
+name = "simple_surface"
+path = "examples/ch02/simple_surface.rs"
+
+[[example]]
+name = "parametric_surface"
+path = "examples/ch03/parametric_surface.rs"
+
+[[example]]
+name = "super_shape"
+path = "examples/ch04/super_shape.rs"
+
